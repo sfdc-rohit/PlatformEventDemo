@@ -1,0 +1,44 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" 
+                controller= "IntegrationNotifications" access="global" >
+    
+    
+    <aura:attribute type="String" name="whole_value"/>     
+    <aura:attribute type="boolean" name="showMessage" default="false" />
+    <aura:attribute Name="selRecType" type="String"  access="public" />
+    <div class = "slds-grid slds-gutters slds-wrap">
+        
+        <div class="slds-col slds-size_1-of-6"></div>
+        <div class="slds-col slds-size_4-of-6">
+            <span><lightning:input type="text" aura:id="wholeValue" label="Enter Message" 
+                                   value="{!v.whole_value}"/></span>
+        </div>
+        <div class="slds-col slds-size_1-of-6"></div>
+        
+        <div class="slds-col slds-size_1-of-6"></div>
+        <div class="slds-col slds-size_4-of-6">
+            <span>
+                <lightning:select name="selectItem" aura:id="selectItem" value="{!v.selRecType}" label="Select User" onchange="{!c.doSomething}">
+                    <option value="">choose one...</option>
+                    <option value="Admin">Admin</option>
+                    <option value="Lokesh">Lokesh</option>
+                </lightning:select>
+            </span>
+        </div>
+        <div class="slds-col slds-size_1-of-6"></div>
+        
+        <div class="slds-col slds-size_6-of-6"></div>
+        <div class="slds-col slds-size_1-of-6"></div>
+        <div class="slds-col slds-size_4-of-6">
+            <span>
+                 <lightning:button onclick="{!c.onClick}" variant="brand" label="Submit" />
+            </span>
+        </div>
+        <div class="slds-col slds-size_1-of-6"></div>
+        
+    </div>
+    
+    
+   
+   
+    
+</aura:component>
