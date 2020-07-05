@@ -43,8 +43,8 @@ The `packageDirectories` filepath tells VS Code and Salesforce CLI where the met
       "default": true
     }
 ]
-```
-
+``` 
+test
 ## Part 2: Working with Source
 
 For details about developing against scratch orgs, see the [Package Development Model](https://trailhead.salesforce.com/en/content/learn/modules/sfdx_dev_model) module on Trailhead or [Package Development Model with VS Code](https://forcedotcom.github.io/salesforcedx-vscode/articles/user-guide/package-development-model).
